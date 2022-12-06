@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            color: white;
+            text-align: center;
+            font-size: larger;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: blue;
+            margin: 0px;
+        }
+        nav{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: lightgrey;
+        }
+        nav img{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        nav a{
+            color: black;
+            font-size: larger;
+            text-decoration: aliceblue;
+            padding-right: 50px;
+            display: inline-flexbox;
+            background-color: lightgray;
+        }
+        nav a:hover{
+            background-color: brown;
+        } 
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid:
+  'menu header header header header header'
+  'menu main main main right right '
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.item2{
+    width: 250px;
+    border: 3px;
+    border-style:  solid;
+}
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+td{
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            background-color: lightblue;
+            vertical-align: bottom;
+            width: 50px;
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+            font-style: italic;
+        }
+        th{
+            text-align: center;
+            color: brown;
+            font-size: 20px;
+            background-color: violet;
+            width: 200px;
+        }
+      .item1 {
+            background-color: coral;
+             width: 1000px;
+             height: 200px;
+             border: 1px solid black;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }    
+        td:hover{
+            background-color: brown;
+            background-image: https://www.google.com/imgres?imgurl=https%3A%2F%2Fcontent.jdmagicbox.com%2Fcomp%2Fbangalore%2Fu3%2F080pxx80.xx80.130302160531.q1u3%2Fcatalogue%2Fktm-bangalore-kasturba-road-bangalore-motorcycle-dealers-ktm-duke-authorised--mwb031.jpg&imgrefurl=https%3A%2F%2Fwww.justdial.com%2FBangalore%2FKtm-Bangalore-Opposite-Cubbon-Park-Police-Station-Kasturba-Road%2F080PXX80-XX80-130302160531-Q1U3_BZDET&tbnid=okrOoaeDQ8CJqM&vet=12ahUKEwi10LWk0oz7AhXxx6ACHXiQCLkQMygLegUIARDeAQ..i&docid=TrnB4GBlZLiKhM&w=400&h=338&q=ktm&ved=2ahUKEwi10LWk0oz7AhXxx6ACHXiQCLkQMygLegUIARDeAQ;
+        }
+        th:hover{
+            background-color: yellow;
+        }
+        .item4{
+            width: 300px;
+        }
+        .item5{
+float: left;
+  width: 100%;
+  padding: 50px;
+  height: 233px;
+  border-style: solid;
+  column-gap: 10px;
+}
+h3{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-size: large;
+}
+.item4{
+  background-color: lightgrey;
+  width: 300px;
+  border: 3px solid green;
+  margin: 5px;
+  height: 350px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style:ridge;
+
+}
+
+h2{
+    background-color:coral;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+p1{
+    background-color: crimson;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+p2{
+    background-color: crimson;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+p{
+    font-size: x-small;
+}
+h4{
+    font-size: x-small;
+}
+span{
+    font-size: x-small;
+}
+h5{
+    font-size: small;
+}
+h3{
+    height: 45px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <span style="color: yellow">U</span>
+        <span>M</span>
+        <span>S</span>
+        University<br>Management System
+    </header>
+    <nav>
+        <img src="https://i.pinimg.com/originals/c9/12/d4/c912d49f5f63e3c25aae2465f7577e7a.png" alt="lpu university logo" width="300" height="100" >
+        <a href=#>Home</a>
+        <a href=#>Time table</a>
+        <a href="#"">Exam</a>
+        <a href="#">Change password</a>
+        <a href="#">Logout</a>
+    </nav> 
+    <div class="grid-container">
+        <div class="item1"><h2>My course and Attendances</h2>
+            <table cellpadding="10px">
+                <tr>
+                    <th >Course</th>
+                    <th>Total class</th>
+                    <th>Class present</th>
+                    <th>Class absent</th>
+                    <th>percentage</th>
+                </tr>
+                <tr>
+                    <td>CHE110-ENVIRONMENTAL STUDIES</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>CSE-ORIENTATION TO COMPUTING-1</td>
+                    <td>19</td>
+                    <td>19</td>
+                    <td>0</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>BASIC ELECTRICAL AND ELECTRONICS ENGINEERING</td>
+                    <td>28</td>
+                    <td>26</td>
+                    <td>0</td>
+                    <td>93%</td>
+                </tr>
+                <tr>
+                    <td>INT108-PYTHON PROGRAMMING</td>
+                    <td>43</td>
+                    <td>42</td>
+                    <td>0</td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <td>MTH174-ENGINEERING MATHEMATICS</td>
+                    <td>43</td>
+                    <td>40</td>
+                    <td>0</td>
+                    <td>93%</td>
+                </tr>
+                <tr1>
+                    <td>PES318-SOFT SKILLS-1</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>0</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>PEVV20-ENGLISH LANGUAGE PROFICIENCY LAB</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>88%</td>
+                </tr>
+                <tr>      
+                    <td>CSE326-INTERNET PROGRAMMING LABORATORY</td>
+                    <td>28</td>
+                    <td>28</td>
+                    <td>0</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>ECE279-BASIC ELECTRICAL AND ELECTRONICS ENGINEERING</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>100%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item2">Profile
+            <img src="satish.jpg" alt="profile img" width="150px" height="150px">
+            <h3>WELCOME</h3>
+            <P>P.SATHISH KUMAR<br>(12211328)</P>
+            <span>Roll no: RK22MQB56 (Term:122231)</span>
+            <h4>Group - 2 (Section:K22MQ)</h4>
+            <h5>Programme - P132::B.Tech. (Computer Science & Engineering)</h5>
+             </div>
+        <div class="item3"><h3 style="background-color:lightgreen">TimeTable</h3>
+            <table>
+        <tr>
+        <th style="background-color: ;red">time</th>
+        <th>course</th>
+        <th>room number</th>
+        <th>attendances</th>
+        </tr>
+        <tr>
+            <td style="background-color:lighting-color: green;;" color="blue">9 to 10</td>
+            <td>CSE326-INTERNET PROGRAMMING LABORATORY</td>
+            <td>36-302A</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>9 to 11</td>
+            <td>CSE326-INTERNET PROGRAMMING LABORATORY</td>
+            <td>36-302A</td>
+            <td>100%</td>
+        </tr>
+        <tr>
+            <td>11 to 12</td>
+            <td>CSE326-INTERNET PROGRAMMING LABORATORY</td>
+            <td>36-302A</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>12 to 1</td>
+            <td>CSE326-INTERNET PROGRAMMING LABORATORY</td>
+            <td>36-302A</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+            </div>  
+        <div class="item4"><p2>Teacher on leave</p2>
+            <p>TEACHER ON LEAVE</p>
+        </div>
+        <div class="item5"><p1>Announcement</p1>
+
+        </div>
+      </div>
+
+</body>
+</html>
